@@ -1,15 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --textwhite: #DEE3E6;
+    --bluelight: #004e92;
+    --darkblue: #000428;
+    --orange: #E6721C;
+}
+    
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+
+    font-family: 'Poppins', sans-serif;
+
+    text-decoration: none;
+    list-style-type: none;
 }
+
+body {
+    background-image: url(image/background.jpg);
+}
+
+/* botones interacción */
+
+.items a:hover, a:focus {
+    color: var(--bluelight);
+}
+
+.boton :hover {
+    background-color: var(--bluelight);
+}
+
+main a:hover {
+    background-color: var(--orange);
+    color: var(--textwhite);
+    box-shadow: 0px 0px 6px var(--textwhite);
+}
+
+/* header */
 
 header {
     box-shadow: 0 0 20px black;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
 }
 
-img {
+.img-logo {
     width: 200px;
     height: 100px;
 }
@@ -17,29 +57,96 @@ img {
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: rgb(233, 233, 233);
+    background-color: #fff;
 }
 
-ul {
-    list-style: none;
+.lista {
     display: flex;
+    align-items: center;
     gap: 30px;
-    margin: 40px 0px 0px 0px;
 }
 
-ul li:first-child {
+.lista li:first-child {
     font-weight: 700;
 }
 
-ul a {
-    color: #0E3850;
-    text-decoration: none;
+.lista a {
+    color: var(--darkblue);
 }
 
 .boton a {
-    background-color: #0E3850;
+    background-color: var(--darkblue);
     box-shadow: 2px 2px 5px 0px #0E3850;
     border-radius: 5px;
     color:white;
+
     padding: 10px;
 }
+
+/* main */
+
+article {
+    color: var(--textwhite);
+    display: flex;
+    justify-content: space-around;
+
+    margin: 200px 100px 100px 100px;
+}
+
+.hero, .info {
+    text-align: center;
+}
+
+#img-hero {
+    width: 900px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    
+    width: 700px;
+    height: 300px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.hero p {
+    font-size: 20px;   
+}
+
+#button-container ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.button a {
+    font-weight: 700;
+    color: var(--darkblue);
+
+    background-color: white;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 15%;
+    padding: 50px;
+    border-top: solid 2px var(--textwhite);
+    border-bottom: solid 2px var(--textwhite);
+
+    font-size: 24px;
+}
+
+
