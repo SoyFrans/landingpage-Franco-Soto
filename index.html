@@ -5,12 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fex House</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-querys.css">
 </head>
 
 <body>
     <header>
         <nav>
+            
             <img class="img-logo" src="image/fex-01.png" alt="fex_logo">
+
+            <div class="menu-burger">
+                <label for="menu-toggle" class="menu-label">
+                    <img src="image/menu.png" alt="" class="menu-icon">
+                </label>
+               <input type="checkbox" id="menu-toggle">
+                
+               <nav class="menu">
+                    <ul class="lista">
+                        <li class="items"><a href="#">Inicio</a></li>
+                        <li class="items"><a href="#">Comprar</a></li>
+                        <li class="items"><a href="#">Alquilar</a></li>
+                        <li class="items"><a href="#">Contactos</a></li>
+                    </ul>
+               </nav>
+            </div>
+
             <ul class="lista">
                 <li class="items"><a href="#">Inicio</a></li>
                 <li class="items"><a href="#">Comprar</a></li>
@@ -18,6 +37,7 @@
                 <li class="items"><a href="#">Contactos</a></li>
                 <li class="boton"><a href="#">Ingresar</a></li>
                 <li class="boton"><a href="#">Registrarse</a></li>
+                <li class="boton query-boton"><a href="#">Iniciar Sesión</a></li>
             </ul>
         </nav>
     </header>
@@ -42,10 +62,136 @@
 
         <article class="hero-container about">
             <div class="info">
-                <p>En Fex House, estamos aquí para hacer que el proceso de encontrar tu próximo hogar sea más fácil y satisfactorio. Nos especializamos en ayudarte a comprar, vender o alquilar propiedades de manera sencilla y confiable.</p>
+                <p>En Fex House, estamos acá para hacer que el proceso de encontrar tu próximo hogar sea más fácil y satisfactorio. Nos especializamos en ayudarte a comprar, vender o alquilar propiedades de manera sencilla y confiable.</p>
             </div>
         </article>
-        
+
+        <article class="cards-adv">
+            <h2> Pensamos en <label>vos</label>.</h2>
+            <ul id="adv-container">
+                <div class="uno">
+                    <div class="card">
+                        <div class="title-card">
+                            <img src="image/corazon.png" alt="Service">
+                            <h3>Servicio personalizado</h3>
+                        </div>
+                        <h4>Que se adapta a tus necesidades. Nuestro compromiso es garantizar que encuentres la solución perfecta.</h4>
+                    </div>
+                </div>
+                
+                <div class="dos">
+                    <div class="card">
+                        <div class="title-card">
+                            <img src="image/Asesoramiento.png" alt="Service">
+                            <h3>Asesoramiento profesional</h3>
+                        </div>
+                        <h4>Con excelentes expertos en bienes raíces para resolver todas tus dudas.</h4>
+                    </div>
+                </div>
+                
+                <div class="tres">
+                    <div class="card">
+                        <div class="title-card">
+                            <img src="image/casa.png" alt="Casa">
+                            <h3>Variedad de propiedades</h3>
+                        </div>
+                        <h4>Desde departamentos en pleno centro hasta cabañas en Potrerillos. En Fex House tenemos el lugar ideal para vos.</h4>
+                    </div>
+                </div>
+                
+            </ul>
+        </article>
+
+        <article class="contacts">
+            <div class="title-contact">
+                <h2>Contactos</h2>
+            </div>
+           
+            <div class="contact-container">
+            
+                <ul class="curriculum">
+                    <div class="nombre-foto">
+                        <img src="image/Mariano.jpg" alt="Mariano Mammoli">
+                        <h3>Mariano Mammoli</h3>
+                        <h5>Agente inmobiliario.</h5>
+                    </div>
+                    
+                    <li>
+                        <label class="logo">
+                            <img src="image/email.png" alt="email">
+                        </label>
+                        mammoliflex@gmail.com
+                    </li>
+                    <li>
+                        <label class="logo">
+                            <img src="image/telefono.png" alt="teléfono">
+                        </label> 
+                        261 5568902
+                    </li>
+                </ul>
+                
+                <ul class="curriculum">
+                    <div class="nombre-foto">
+                        <img src="image/Paola.jpg" alt="Paola Barrios">
+                        <h3>Paola Barrios</h3>
+                        <h5>Lic. en Administración de empresas.</h5>
+                    </div>
+                    
+                    <li>
+                        <label class="logo">
+                            <img src="image/email.png" alt="email">
+                        </label>
+                        barriosflex@gmail.com
+                    </li>
+                    <li>
+                        <label class="logo">
+                            <img src="image/telefono.png" alt="teléfono">
+                        </label>    
+                        261 2219032
+                    </li>
+                </ul>
+            </div>
+
+            <div class="map">
+                <h3>Encontranos acá</h3>
+                <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Argentina,%20Mendoza.%20San%20Lorenzo,%20725+(Flex%20House)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">Car GPS</a></iframe></div>
+            </div>
+        </article>
     </main>
+
+    <footer>
+        <ul class="lista-footer">
+            <li class="derechos">
+                <h4>FEX HOUSE inmobiliaria © 2023</h4>
+            </li>
+
+            <li class="footer-logo">
+                <img src="image/fexfex_Mesa de trabajo 2.png">
+            </li>
+
+            <li>
+                <div class="redes">
+                    <h4>Nuestras redes:</h4>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="image/instagram.png" alt="Instagram logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="image/linkedin.png" alt="Linkedin logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="image/facebook.png" alt="Facebook logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>

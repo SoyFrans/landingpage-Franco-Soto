@@ -1,0 +1,185 @@
+@media (max-width: 1600px) {
+    .hero-container {
+        margin: 100px 
+    }
+
+    .hero-image {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #img-hero {
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 992px) {
+    .lista :nth-child(5), .lista :nth-child(6) {
+        display: none;
+    }
+
+    .query-boton {
+        display: flex;
+    }
+    
+    #img-hero {
+        display: none;
+    }
+
+    .about, .info {
+        margin: 100px 10px;
+    }
+
+    .card {
+        background-color: #00000072;
+        box-shadow: none;
+        width: auto;
+        flex-wrap: wrap;
+    }
+
+    .card h3 {
+        color: var(--orange);
+    }
+
+    .contact-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .curriculum {
+        background-color: #00000072;
+        border-radius: 10px;
+        color: var(--textwhite);
+        width: 450px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .nombre-foto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .curriculum img {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /*menu hamburguesa */
+
+    .header {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .menu-burger {
+        display: flex;
+    }
+
+    .menu-label img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    #menu-toggle:checked + .menu {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 100px;
+        padding: 30px 150px;
+        transition: 0.3s;
+        z-index: 1;
+
+        background-color: white;
+        border-radius: 10%;
+    }
+
+    .items {
+        width: 100%;
+        margin-right: 50px;
+        border-bottom: 2px solid var(--darkblue);
+    }
+
+    .items :hover {
+        border-bottom: 2px solid var(--bluelight);
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*header*/
+
+    .img-logo {
+        width: 150px;
+        height: 100px;
+    }
+
+    .lista {
+        display: none;
+    }
+
+    /* main */
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    .hero-container {
+        margin: 10%;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .hero p {
+        font-size: 20px;
+        text-align: center;
+        margin: 0px 10%;
+    }
+
+    .about p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .cards-adv {
+        width: 100%;
+    }
+
+    /* footer */
+
+    footer {
+        height: 100px;
+    }
+
+    .lista-footer {
+        display: flex;
+        align-content: center;
+    }
+
+    .derechos h4 {
+        font-size: 15px;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+}
